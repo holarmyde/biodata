@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Post Graduate Biodata</title>
+<script src="libraries/angular.js"></script>
+<script src="libraries/angular-route.js"></script>
+<script src="libraries/jquery-1.9.1.js"></script>
+<script src="libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script src="controllers/main.js"></script>
+
+<!-- introduce the controllers-->
+<script src="controllers/admin.js"></script>
+<script src="controllers/student.js"></script>
+<script src="controllers/login.js"></script>
+<script src="controllers/printout.js"></script>
+
+<link rel="stylesheet" href="libraries/bootstrap-3.3.1-dist/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="css/mycss.css" />
+</head>
+
+<body>
+    <div class="pageWrapper">
+    <ul div class="myMenu">
+ <li><a href="">Home </a></li>
+  <li><a href="">Instructions </a> 
+  <ul>
+   <li><a href="#">sub menu item 1</a></li> 
+   <li><a href="#">sub menu item 2</a></li>
+    <li><a href="#">sub menu item 3</a></li> 
+    <li><a href="#">sub menu item 4</a></li> 
+    </ul> 
+    </li> 
+    <li><a href="#">Account Management</a> <ul>
+     <li><a href="#">sub menu item 1</a></li> 
+     <li><a href="#">sub menu item 2</a></li> 
+     <li><a href="#">sub menu item 3</a></li> 
+     <li><a href="#">sub menu item 4</a></li> 
+     </ul> 
+     </li> 
+     <li><a href="#">FAQs</a></li> 
+     <li><a href="#">Contact Us</a></li>
+      </ul>
+    	<div class="myngView" ng-view>
+            
+        </div>
+        <div >
+            
+        </div>
+    </div>
+        
+
+    
+</body>
+</html>

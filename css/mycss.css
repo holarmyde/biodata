@@ -1,0 +1,419 @@
+html, body
+{margin: 0px;
+padding:0px;
+background-color:#CCC;
+
+}
+.pageWrapper
+{ margin:0px auto;
+padding:0px;
+background-color:#CCCCCC;
+	
+	
+	
+}
+.myngView
+{ min-height:500px;
+height:auto;
+min-width:600px;
+width:80%;
+margin:0 auto;
+padding:0px;
+}
+
+.mybanner
+{ width:60%;
+padding:0px;
+margin:0px;
+border:solid 2px black;
+float:left;
+min-height:500px;
+background:#113344 url(../images/Main-Gate-1960.jpg)
+	
+	
+}
+.mylogin
+{ width:40%;
+padding:0px;
+margin:auto;
+border:solid 2px;
+min-height:340px;
+height:500px;
+padding:0px;
+margin-bottom: 0px;
+margin-top:0px;
+background-color:white;
+float:right;
+
+	
+	
+	}
+
+.container
+{ margin:40px 30%;
+background-color:#CCC;
+	
+	
+	
+	}
+.mainHeadingDiv
+{100px;
+background-color:blue;
+	
+	
+	
+}
+	
+
+
+.formControlDiv
+{ margin:10px;
+}
+
+.btn-container
+{ margin:10px;
+text-align:right;
+	
+	
+	}
+.loginHeading
+{ background-color:black;
+color:white;
+margin:0px;
+padding:7px;
+font-size:15px;
+
+}
+
+.myloginform
+{ height:40%;
+
+
+	
+	
+	
+}
+.mylogininstruct
+{ height:60%;
+margin : 5px
+	
+	
+	
+}
+.rightAlign
+{ text-align:right;
+
+	
+	
+}
+.formStyle
+{border:solid black 2px; 
+margin:10px 35px auto;
+border-bottom-right-radius: 50px;
+box-shadow:5px 5px 5px black;
+padding:0px;
+
+
+	
+	
+	
+	
+}
+.marginSep
+{ margin:5px;
+
+	
+	
+	
+}
+.formHeading
+{ height:40px;
+background-color:#003;
+color:white;
+margin-top:0px;
+border:1px solid black;
+padding:
+	
+	
+}
+
+.formHeading h3
+{ margin:5px;
+text-align:center;
+	
+	
+	
+}
+.myloginform
+{
+
+	}
+.feedback
+{ color:white;
+background-color:red;
+text-align:center;
+	
+	
+
+}
+.personal
+{ width:45%;
+float:left;
+margin:20px
+	
+	
+}
+
+.photosig
+{ width:45%;
+float:right;
+margin:20px
+	
+	
+}
+
+.myPanelHeading
+{ background-color:blue;
+	
+	
+	
+}
+.myadminbanner
+{ min-height:500px;
+min-width:600px;
+width:80%;
+margin:100px auto;
+background-color:white;
+padding:0px;
+
+
+
+	
+}
+.personal
+{
+width:45%;
+padding:0px;
+margin:20px;
+border:solid 2px black;
+float:left;
+min-height:500px;
+margin-bottom: 0px;
+margin-top:0px;
+	
+}
+.pge
+{height:auto;
+width:100%;
+background-color:white;
+margin:0px auto 100px;
+padding:0px;
+float:left;
+}
+
+
+	.myMenu 
+	{ 
+margin:30px auto 0;
+ padding:0; 
+ width: 80%;
+ background-color:#09F;	
+ height: 35px;
+ } 
+ .myMenu li 
+ { 
+ list-style:none; 
+ float:left; 
+ font:12px Arial, Helvetica, sans-serif #111; 
+ }
+  .myMenu li a:link, .myMenu li a:visited 
+  { 
+  display:inline-block; 
+  text-decoration:none; 
+  background-color:#09F;
+   padding: 0.5em 2em; 
+   margin:0; 
+   border-right: 1px solid #fff;
+    color:#111;
+	 } 
+	 
+	.myMenu li a:hover 
+	{ 
+	background-color:#0CF;
+	 } 
+	 
+	 /*style the sub menu*/ 
+	 .myMenu li ul
+	  { 
+	 position:absolute; 
+	 visibility:hidden; 
+	 border-top:1px solid #fff; 
+	 margin:0; 
+	 padding:0; 
+	 }
+	  .myMenu li ul li
+	   {
+		   display:inline; 
+		   float:none; 
+		   } 
+		   .myMenu li ul li a:link, .myMenu li ul li a:visited 
+		   {
+			    background-color:#09F; 
+				width:auto; 
+				} 
+				.myMenu li ul li a:hover
+				 { 
+				background-color:#0CF; 
+				}
+
+.pgheading
+{
+	
+width: 100%;
+text-align:center;	
+	}
+	
+.photosig
+{
+width:45%;
+padding:0px;
+margin:20px;
+border:solid 2px black;
+float:left;
+min-height:500px;
+margin-bottom: 0px;
+margin-top:0px;	
+	}
+	
+.photostuff
+{ text-align:center;
+margin:20px 0;
+	
+	
+	
+}
+.photoPlaceholder
+{ font-size:10px;
+background:url(../images/profile-placeholder.gif);
+background-size:contain;
+color:red;
+height:100px;
+width:100px
+	
+	
+	
+}
+
+
+
+.sigPlaceholder
+{ font-size:10px;
+background:url(../images/signature-placeholder.jpg);
+background-size:contain;
+color:red;
+height:100px;
+width:100px
+	
+	
+	
+}
+
+.formstuff
+{ 
+width:700px;
+text-align:center;
+margin: 0px 20px auto;
+padding-left:100px;
+font-size:10px
+
+
+	
+	
+	
+}
+.formWrapper
+{
+margin:0px 20px auto;
+padding:0px;
+text-align:center;
+	
+	
+	
+	
+}
+.uploadClass, .cancelClass
+{ margin:2px
+	
+	
+	
+}
+.fileChooseClass
+{ width:40%;
+text-align:center;
+margin:0px 130px auto;
+
+	
+	
+}
+
+.fileUpload
+{ display:inline;
+	
+	
+	
+}
+.printoutPhoto
+{ 
+width:120px;
+height:120px;
+margin:20px 20px 5px 20px;
+	
+	
+	
+}
+
+
+.printoutSignature
+{ 
+width:70px;
+height:30px;
+margin:0px 20px;
+	
+	
+	
+}
+.printoutImageDiv
+{ text-align:center
+	
+	
+	
+}
+.previewClass
+{
+	margin:20px;
+	float:right
+	
+	
+	
+}
+
+.printPageWrapper
+{ background-color:white
+	
+	
+	
+}
+.tableClass
+{ margin:20px auto;
+	
+	
+	
+}
+.printoutInfo
+{ margin:10px 150px auto;
+line-height:20px;
+padding:30;
+	
+	
+	
+}

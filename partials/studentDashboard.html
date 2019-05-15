@@ -1,0 +1,185 @@
+<div class="pge" ng-controller = "studentCtrl">
+<div><h3 class='pgheading'>PG Students Biodata </h3></div>
+<!--this is student personal information-->
+<div class="panel panel-default personal">
+  <div class="panel-heading" style="background-color:blue">Personal Information</div>
+  <div class="panel-body">
+    <table class="table">
+    	<tr>
+        	<td>
+            	Surname
+            </td>
+            <td>
+            	{{studentInfo.Surname}}
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	Othernames
+            </td>
+            <td>
+            	{{studentInfo.othername}}
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	Numeration
+            </td>
+            <td>
+            	{{studentInfo.studentId}}
+            </td>
+        </tr>
+    <tr>
+        	<td>
+            	Sex
+            </td>
+            <td>
+            	{{studentInfo.sex}}
+            </td>
+        </tr>
+    <tr>
+        	<td>
+            	State
+            </td>
+            <td>
+            	{{studentInfo.state}}
+            </td>
+        </tr>
+    <tr>
+        	<td>
+            	Local Govt Area
+            </td>
+            <td>
+            	{{studentInfo.lga}}
+            </td>
+        </tr>
+        
+         <tr>
+        	<td>
+            	Mode
+            </td>
+            <td>
+            	{{studentInfo.mode}}
+            </td>
+        </tr>
+        
+           <tr>
+        	<td>
+            	Telephone
+            </td>
+            <td>
+            	{{studentInfo.telephone}}
+            </td>
+        </tr>
+          <tr>
+        	<td>
+            	Session
+            </td>
+            <td>
+            	{{studentInfo.session}}
+            </td>
+        </tr>
+        
+        <tr>
+        	<td>
+            	Permanent Address
+            </td>
+            <td>
+            	{{studentInfo.permanentAddress}}
+            </td>
+        </tr>
+         <tr>
+        	<td>
+            	Postal Address
+            </td>
+            <td>
+            	{{studentInfo.postalAddress}}
+            </td>
+        </tr>
+        
+        <tr>
+        	<td>
+            	Date of Birth
+            </td>
+            <td>
+            	{{studentInfo.dob}}
+            </td>
+        </tr>
+        
+        <tr>
+        	<td>
+            	Department
+            </td>
+            <td>
+            	{{studentInfo.department}}
+            </td>
+        </tr>
+        
+        <tr>
+        	<td>
+            	Email
+            </td>
+            <td>
+            	{{studentInfo.email}}
+            </td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+<div class="panel panel-default photosig">
+  <div class="panel-heading" style="background-color:blue">Student Photo and Signature </div>
+  <div class="panel-body">
+    <div class="photostuff">
+    	<div >
+        	<h4>Upload Photo</h4>
+            <div>Specification: Not greater than 50KB. Photo type is JPEG</div>
+        </div>
+        <div>
+        	<img alt="Student Photo" class="photoPlaceholder" ng-src = "photo/{{photoName}}"  /><div><a class="btn btn-primary btn-sm" href="" ng-click="setFileUpload()" ng-show="!getFileUpload" >Choose Photo</a><div>
+            <div class="formWrapper">
+            <form>
+             <div ng-show="getFileUpload">
+           <input type="file" name="file" id="file" onchange= "angular.element(this).scope().uploadPhoto(this.files)" style=" display:inline; width:200px" />
+              <button class="btn btn-success btn-sm uploadClass" ng-click="upload()" >Upload</button>
+              <button class="btn btn-default btn-sm cancelClass" ng-click="cancel()" >Cancel</button>
+             </div>
+            </form>
+            </div>
+        </div>
+        
+        
+        
+        <!--this is the signature section-->
+        <div class="photostuff" ng-show = "photoUploadIsOver">
+        <hr />
+    	<div >
+        	<h4>Upload Signature</h4>
+            <div>Specification: Not greater than 50KB. Signature type is JPEG</div>
+        </div>
+        <div>
+        	<img alt="Student Signature" class="sigPlaceholder" ng-src = "signature/{{signatureName}}"  /><div><a class="btn btn-primary btn-sm" href="" ng-click="setFileUpload1()" ng-show="!getFileUpload1" >Choose Signature</a><div>
+            <div class="formWrapper">
+            <form>
+             <div ng-show="getFileUpload1">
+           <input type="file" name="file1" id="file1" onchange= "angular.element(this).scope().uploadSignature(this.files)" style=" display:inline; width:200px" />
+              <button class="btn btn-success btn-sm uploadClass" ng-click="upload1()" >Upload</button>
+              <button class="btn btn-default btn-sm cancelClass" ng-click="cancel1()" >Cancel</button>
+             </div>
+            </form>
+            </div>
+        </div>
+        
+        
+        
+        <!--this the end of signaturte section-->
+        <!-- this is the preview section-->
+        <div>
+        	<button ng-click="preview()" class="btn btn-warning btn-sm previewClass">Preview</button>
+        </div>
+        <!--end of preview section-->
+    </div>
+  </div>
+</div>
+
+</div>

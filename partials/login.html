@@ -1,0 +1,63 @@
+<div ng-controller="loginCtrl">
+
+
+<div class="mybanner">
+
+</div>
+<div class="mylogin">
+<div class="myloginform">
+	<form class="formStyle" id="loginForm" name="loginForm" novalidate="novalidate">
+   <!-- {{test}} -->
+    <div class="formHeading"><img /><h3>Authentication</h3></div>
+    <div ng-if="feedbackmessage" class="feedback">{{message}}</div>
+    	<div class="row marginSep">
+        	<label for="username" class="col-md-5 rightAlign ">
+            	Username
+            </label>
+            <input id="username" name="username" ng-model="user.username" placeholder="Username" type="text" class="col-md-5" required /><span ng-show="loginForm.username.$error.required  && loginForm.username.$dirty">username is compulsory</span>
+        </div>
+        
+        <div class="row marginSep">
+        	<label for="password" class="col-md-5 rightAlign" >
+            	Password
+            </label>
+            <input id="mypassword" name="mypassword" ng-model="user.password" placeholder="Password" type="password" class="col-md-5" required/>
+            <span ng-show="loginForm.password.$error.required && loginForm.username.$dirty">password  is compulsory</span>
+         </div>
+         
+        <div class="row marginSep">
+        <span class="col-md-5">&nbsp;</span>
+        	
+            <span class="col-md-5" rightAlign><input type="checkbox" />Remember me</span>
+        </div>
+        
+        
+        <div class="row marginSep">
+        <div class="col-md-10 rightAlign">
+           <button ng-click="login()" class="btn btn-success btn-sm " ng-disabled="loginForm.$invalid">&nbsp;&nbsp;Login&nbsp;<i class="glyphicon glyphicon-send" ></i></button>
+        </div>
+        </div>
+        
+        
+        
+    
+    
+    </form>
+
+
+</div>
+
+
+
+
+<div class="mylogininstruct">
+<div>
+
+<p>. Please login with your pg application no as your username</p>
+<p>. Please login with your pg matric no as your password</p>
+<p>. Please upload your pictures in .jpeg Format.</p></div>
+
+</div>
+
+</div>
+</div>

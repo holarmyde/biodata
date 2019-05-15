@@ -1,0 +1,110 @@
+<div class="printPageWrapper" id="printableArea">
+	<div>
+    <img>
+    </div>
+    <!--heading-->
+    <div class="printoutImageDiv"><h2>2015/2016 POSTGRADUATE BIODATA FORM</h2></div>
+    
+    <!--photo-->
+    <div class="printoutImageDiv">
+    <img ng-src = "photo/{{filename}}"  class="printoutPhoto" >
+    </div>
+    
+    <!--signature-->
+    <div class="printoutImageDiv">
+        <img ng-src = "signature/{{filename}}" class="printoutSignature" >
+
+    </div>
+    
+    <div>
+    
+    <table border="1" align="center" class="tableClass">
+    <tr>
+    	<td>
+        	Matriculation Number
+        </td>
+        <td>
+        	{{studentInfo.matricNo}}
+        </td>
+      </tr>
+      <tr>  
+        <td>
+        	PGX Number
+        </td>
+        <td>
+        	{{studentInfo.studentId}}
+        </td>
+       </tr>
+       <tr> 
+        <td>
+        	Surname
+        </td>
+        <td>
+        	{{studentInfo.Surname}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Othernames
+        </td>
+        <td>
+        	{{studentInfo.othername}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Sex
+           </td>
+        <td>
+        	{{studentInfo.sex}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Faculty
+            
+        </td>
+        <td>
+        	{{studentInfo.faculty}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Department
+            
+        </td>
+        <td>
+        	{{studentInfo.department}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Level
+            
+        </td>
+        <td>
+        	{{studentInfo.degree}}
+        </td>
+        </tr>
+       <tr> 
+        <td>
+        	Contact Address
+            
+        </td>
+        <td>
+        	{{studentInfo.permanentAddress}}
+        </td>
+    </tr>
+    </table>
+    </div>
+  <div class="printoutInfo">
+           <p>
+           This is to indicate that you ve sucessfully completed your online biodata form. Please keep this printed copy for future reference. Also keep checking your department for your printed ID card within a span of 4 weeks from the date you filled the Biodata form.
+           </p>
+   </div>
+
+
+
+
+</div>
+<button type="button" ng-click="printDiv('printableArea');"  class="btn btn-danger" style="float:right; margin:10px" >Print</button>
